@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
+  color: #eee;
+  padding: 2em;
+}
+h1,
+h2 {
+  text-align: center;
+}
+#main > div,
+#chosen-files > div {
+  border: 1px solid #fff2;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  transition-duration: 0.3s;
+  width: 70%;
+  margin-left: 15%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#main > div div h4 {
+  margin-top: 0;
+}
+#main > div div {
+  width: 80%;
+}
+#main > div span {
+  border-radius: 50%;
+  border: 1px solid #fff7;
+  cursor: pointer;
+  position: relative;
+  flex-grow: 1;
+  height: 1.2em;
+  max-width: 1.2em;
+  width: 1.2em;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#main > div.selected {
+  background-color: #9f93;
+}
+.button-link {
+  background-color: #fff;
+  padding: 0.4em;
+  font-size: 1.3em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border-radius: 0.3em;
+}
+
+#chosen-files > div button {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #eee6;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+#chosen-files > div button:hover {
+  background-color: #fff3;
+}
+
+#chosen-files-payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#chosen-files-payment > .cvs {
+  width: 23%;
+}
+#chosen-files-payment > .exp {
+  width: 63%;
+}
+#chosen-files-payment > * {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.3em;
 }
